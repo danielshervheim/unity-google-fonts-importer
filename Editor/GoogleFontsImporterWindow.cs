@@ -46,7 +46,7 @@ namespace DSS.GoogleFonts
             TextAsset keyFile = Resources.Load<TextAsset>("GoogleFontsApiKey");
             if (keyFile == null)
             {
-                errorMessage = "API key not found in\nAssets/GoogleFonts/Resources/GoogleFontsApiKey.txt";
+                errorMessage = "API key not found in\nResources/GoogleFontsApiKey.txt";
                 drawGUI = Error;
             }
             else
