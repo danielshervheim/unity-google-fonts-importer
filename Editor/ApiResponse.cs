@@ -1,3 +1,6 @@
+// Copyright © Daniel Shervheim, 2020
+// www.danielshervheim.com
+
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
