@@ -1,0 +1,14 @@
+{
+    "name": "DSS.GoogleFonts",
+    "references": [
+        "Unity.EditorCoroutines.Editor"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

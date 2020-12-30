@@ -1,0 +1,10 @@
+{
+    "name": "com.dss.googlefonts",
+    "displayName": "Google Fonts",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "description": "A Google Fonts importer.",
+    "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+    }
+}
