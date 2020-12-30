@@ -15,3 +15,7 @@ Fixed Gitignore issue.
 ## 1.0.3
 
 Added proper documentation to package.
+
+## 1.0.4
+
+Fixed misspelled asmdef file.
