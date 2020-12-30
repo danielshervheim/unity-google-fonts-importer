@@ -1,5 +1,7 @@
 # unity-google-fonts-importer
 
+![example](img/example.png)
+
 ## Usage
 
 ### 1. Add your API key
