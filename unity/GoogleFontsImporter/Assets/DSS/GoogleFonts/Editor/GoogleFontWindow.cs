@@ -102,7 +102,7 @@ namespace DSS.GoogleFonts
             foreach (string style in styles.Keys)
             {
                 string url = styles[style];
-                string path = folderPath + System.IO.Path.DirectorySeparatorChar + font.family + "(" + style + ").ttf";
+                string path = folderPath + System.IO.Path.DirectorySeparatorChar + font.family + " (" + style + ").ttf";
                 yield return DownloadFontStyle(url, path);
             }
         }
