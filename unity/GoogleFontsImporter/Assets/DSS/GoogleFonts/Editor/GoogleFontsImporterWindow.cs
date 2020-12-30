@@ -17,18 +17,19 @@ namespace DSS.GoogleFonts
         delegate void GUI();
         GUI drawGUI;
 
+        // Error message to display if an error occured.
         string errorMessage = "";
 
         // API call response object.
-        Response response = null;
+        ApiResponse response = null;
 
-        // Search term.
+        // The search term.
         string search = "";
 
-        // Category index.
+        // The category index.
         int index = 0;
 
-        // Scroll position in list.
+        // The ccroll position in the font list.
         Vector2 scrollPos = Vector2.zero;
 
         [MenuItem("Google Fonts/Import")]
@@ -70,7 +71,7 @@ namespace DSS.GoogleFonts
             {
                 try
                 {
-                    response = Response.FromJson(www.downloadHandler.text);
+                    response = ApiResponse.FromJson(www.downloadHandler.text);
                     if (response.error.code != 0)
                     {
                         errorMessage = response.error.message;
@@ -127,6 +128,8 @@ namespace DSS.GoogleFonts
                 List<GoogleFont> fonts = response.GetFontsBySearch(search, response.GetCategories()[index]);
                 foreach (GoogleFont font in fonts)
                 {
+                    // If they clicked on this font, spawn a new window to show
+                    // the individual styles available.
                     if (GUILayout.Button(font.family))
                     {
                         GoogleFontWindow.Window(font);

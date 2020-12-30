@@ -26,7 +26,7 @@ namespace DSS.GoogleFonts
             GoogleFontWindow window = (GoogleFontWindow)EditorWindow.GetWindow(typeof(GoogleFontWindow), true, font.family);
             window.Setup(font);
         }
-        
+
         void Setup(GoogleFont font)
         {
             this.font = font;
